@@ -1,0 +1,112 @@
+/* = Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff; /* base background */
+}
+
+/* For large screens, add subtle side background */
+@media (min-width: 790px) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+/* Header and footer styles */
+header, footer {
+  background: #eee;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 80px;
+  vertical-align: middle;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav .active a,
+nav a:hover {
+  color: #009688;
+}
+
+/* Utility classes */
+.float-right {
+  float: right;
+  margin: 10px;
+  width: 200px;
+}
+
+.origin::first-letter {
+  font-size: 2rem;
+  color: darkred;
+}
+
+/* Form input styles */
+input[required], textarea[required] {
+  border: 2px solid red;
+  background: #fff9f9;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+table th, table td {
+  padding: 0.5em;
+}
+table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+table tr:nth-child(odd) {
+  background: #fff;
+}
+
+/* Email input distinct border */
+input[type="email"] {
+  border: 2px solid #007BFF;
+  padding: 0.4em;
+}
+
+/* Back to top link */
+.back-to-top {
+  margin-top: 1em;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #009688;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
